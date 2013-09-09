@@ -1,0 +1,292 @@
+body {
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+	font-size: 12px;
+	line-height: 20px;
+}
+h1 {
+	margin: 10px 0px;
+	float: none;
+	font-family: Georgia, serif;
+	font-size: 38px;
+	line-height: 44px;
+	font-weight: 700;
+}
+h2 {
+	margin: 10px 0px;
+	color: #8a1f4d;
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 700;
+}
+h3 {
+	margin: 25px 0px 10px;
+	color: #06153e;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-align: center;
+}
+h4 {
+	display: block;
+	margin: 10px auto;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #8a1f4d;
+	text-align: center;
+}
+h5 {
+	margin: 10px 0px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+}
+h6 {
+	margin: 10px 0px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+}
+p {
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+.button {
+	position: static;
+	vertical-align: middle;
+	display: block;
+
+	width: 150px;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 4px 15px;
+	float: none;
+	clear: none;
+	border-radius: 0px;
+	background-color: #8a1f4d;
+	box-shadow: rgba(46, 3, 20, 0.95) 1px 1px 3px 0px;
+	color: white;
+	line-height: 42px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-shadow: black 1px 1px 6px;
+}
+.button.catalog-button {
+	box-shadow: #290000 1px 1px 3px 0px;
+	text-shadow: black 1px 1px 6px;
+}
+.header {
+	margin-bottom: 27px;
+}
+
+.logo {
+	float: left;
+}
+.slogan {
+	display: block;
+	overflow: hidden;
+	margin-right: 1px;
+	margin-left: 38px;
+	padding-right: 35px;
+	padding-left: 35px;
+	background-image: none;
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #06153e;
+	font-size: 34px;
+	font-style: italic;
+	text-transform: none;
+}
+.presentation {
+	width: auto;
+	height: 315px;
+	background-image: url(../images/sl2.png);
+	background-size: 960px;
+	background-repeat: no-repeat no-repeat;
+	box-shadow: #183663 5px 1px 35px 5px;
+}
+.action {
+	position: static;
+	margin: 6px 14px -1px 0px;
+	padding: 2px 15px 10px;
+	float: right;
+	background-color: rgba(255, 255, 255, 0.70);
+	box-shadow: #787878 1px 1px 3px 0px;
+	text-align: center;
+}
+.actions {
+	position: static;
+	display: block;
+}
+
+.feedback {
+	position: static;
+	display: inline-block;
+	overflow: visible;
+	width: auto;
+	margin-top: 16px;
+	margin-right: 42px;
+	margin-left: 0px;
+	padding: 6px;
+	float: none;
+	clear: none;
+	border: 0px solid rgba(46, 31, 18, 0.88);
+	background-color: #ccc4c4;
+	box-shadow: black 1px 1px 3px 0px;
+	text-align: left;
+}
+.feedback.cenetr-feedback {
+	width: auto;
+}
+.feedbackslide {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	clear: none;
+	direction: ltr;
+	text-align: center;
+	text-indent: 0px;
+}
+.vk {
+	float: left;
+}
+.vkgroup {
+	float: none;
+}
+.group {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	float: right;
+}
+.good {
+	position: static;
+	margin-top: 20px;
+}
+.goods-face {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	text-align: left;
+}
+.bonus-face {
+	float: left;
+}
+.adv-list {
+	padding-right: 20px;
+	float: left;
+}
+.feed-text {
+	font-style: italic;
+}
+.feed-face {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.feed-vk {
+	color: #06153e;
+}
+.action-head {
+	margin-top: 1px;
+	color: #06153d;
+}
+.up {
+	background-color: #fcfcfc;
+	box-shadow: white 0px 0px 6px 0px;
+}
+@media (max-width: 991px) {
+	.button.catalog-button {
+		box-shadow: #290000 1px 1px 3px 0px;
+		font-weight: 700;
+		text-shadow: black 1px 1px 6px;
+	}
+	.group {
+		box-shadow: none;
+	}
+}
+@media (max-width: 767px) {
+	.presentation {
+		background-image: url(../images/facehead.png);
+		background-position: 11% 109px;
+	}
+	.group {
+		text-align: left;
+	}
+}
+@media (max-width: 479px) {
+}
+
+
+
+/** header */
+	.phone-link {
+		text-decoration: none;
+		font-size: 1.5em;
+		color: #06153e;
+	}
+
+	.connection {
+		float: right;
+		margin-top: 2em;
+	}
+
+	.phone-button {
+		display: table-cell;
+		line-height: 1em;
+	}
+/** action */
+	.action-text {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.new-price {
+		color: #8a1f4d;
+	}
+
+	.old-price {
+		text-decoration: line-through;
+	}
+/** Fears and conscious */
+	.fears {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+
+	.problem {
+		font-size: 1.5em;
+		font-style: italic;
+	}
+	.solution {
+		margin-bottom: 1.5em;
+	}
+
+	.card {
+		box-shadow: gray 2px 2px 2px 2px;
+	}
+
+/** bonuses */
+	.bonuses {
+		margin-top: 14px;
+		margin-bottom: 21px;
+		margin-top: 29px;
+	}
+	.guarantee {
+		float: none;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+/** advantages */
+	.advantages {
+		list-style: url("../images/starlist.png");
+
+	}
