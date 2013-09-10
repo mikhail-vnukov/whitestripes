@@ -41,6 +41,7 @@ h5 {
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 700;
+	text-align: center;
 }
 h6 {
 	margin: 10px 0px;
@@ -94,7 +95,7 @@ p {
 	padding-right: 35px;
 	padding-left: 35px;
 	background-image: none;
-	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Scada', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #06153e;
 	font-size: 34px;
 	font-style: italic;
@@ -103,7 +104,7 @@ p {
 .presentation {
 	width: auto;
 	height: 315px;
-	background-image: url(../images/sl2.png);
+	background-image: url(../images/sl2.jpg);
 	background-size: 960px;
 	background-repeat: no-repeat no-repeat;
 	box-shadow: #183663 5px 1px 35px 5px;
@@ -226,8 +227,10 @@ p {
 /** header */
 	.phone-link {
 		text-decoration: none;
-		font-size: 1.5em;
+		font-size: 1.9em;
 		color: #06153e;
+		font-weight: bold;
+
 	}
 
 	.connection {
