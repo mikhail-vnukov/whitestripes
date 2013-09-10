@@ -196,10 +196,6 @@ p {
 	margin-top: 1px;
 	color: #06153d;
 }
-.up {
-	background-color: #fcfcfc;
-	box-shadow: white 0px 0px 6px 0px;
-}
 @media (max-width: 991px) {
 	.button.catalog-button {
 		box-shadow: #290000 1px 1px 3px 0px;
@@ -242,6 +238,13 @@ p {
 		display: table-cell;
 		line-height: 1em;
 	}
+
+/** presentation */
+	.up {
+		background-color: #fcfcfc;
+		box-shadow: white 0px 0px 6px 0px;
+	}
+
 /** action */
 	.action-text {
 		padding-top: 20px;
