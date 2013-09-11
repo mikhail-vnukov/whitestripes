@@ -203,7 +203,6 @@ p {
 	.phone-button a {
 		width: 170px;
 		padding: 4px 9px;
-		display: inline;
 	}
 
 	.phone-button a img {
@@ -375,5 +374,5 @@ p {
 	.footer {
 		padding-top: 5em;
 		padding-bottom: 5em;
-		background-color: gray;
+		background-color: rgb(231, 235, 253);
 	}
