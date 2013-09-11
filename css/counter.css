@@ -1,0 +1,30 @@
+/*
+
+Styling the counter itself.
+Set image paths accordingly.
+
+THIS YOU NEED TO KEEP.
+
+*/
+
+ul.cd { 
+	float:left;
+	list-style-type:none;
+	margin:0;
+	padding:0
+}
+li.t { 
+	background: url(../images/counter/digits-top.min.png) 0 0 no-repeat; 
+	width:17px;
+	height:13px
+}
+li.b { 
+	background: url(../images/counter/digits-bottom.min.png) 0 0 no-repeat;
+	width:17px;
+	height:21px
+}
+li.s { 
+	background: url(../images/counter/comma.min.png) 2px 75px no-repeat;
+	width:4px;
+	height:33px
+}
