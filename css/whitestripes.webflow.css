@@ -53,6 +53,7 @@ p {
 	margin-bottom: 5px;
 	text-decoration: none;
 }
+
 .button {
 	position: static;
 	vertical-align: middle;
@@ -62,20 +63,28 @@ p {
 	height: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 4px 15px;
 	float: none;
 	clear: none;
 	border-radius: 0px;
 	background-color: #8a1f4d;
 	box-shadow: rgba(46, 3, 20, 0.95) 1px 1px 3px 0px;
+}
+
+.button a {
+	vertical-align: middle;
+	display: table-cell;
 	color: white;
-	line-height: 42px;
 	font-weight: 700;
 	text-align: center;
 	letter-spacing: 0px;
 	text-decoration: none;
 	text-shadow: black 1px 1px 6px;
+	width: 150px;
+	height: 50px;
+	padding: 4px 15px;
+
 }
+
 .button.catalog-button {
 	box-shadow: #290000 1px 1px 3px 0px;
 	text-shadow: black 1px 1px 6px;
@@ -232,11 +241,6 @@ p {
 	.connection {
 		float: right;
 		margin-top: 2em;
-	}
-
-	.phone-button {
-		display: table-cell;
-		line-height: 1em;
 	}
 
 /** presentation */
