@@ -206,6 +206,10 @@ p {
 		margin-top: 2em;
 	}
 
+	.phone-button {
+		margin-top: 1em;
+	}
+
 /** presentation */
 	.up {
 		background-color: #fcfcfc;
@@ -343,4 +347,12 @@ p {
 
 	.goods2 .card {
 		height: 430px;
+	}
+
+/* footer */
+	.footer {
+		margin-top: 3em;
+		padding-top: 5em;
+		padding-bottom: 5em;
+		background-color: gray;
 	}
