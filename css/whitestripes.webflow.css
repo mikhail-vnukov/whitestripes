@@ -66,8 +66,8 @@ p {
 	float: none;
 	clear: none;
 	border-radius: 0px;
-	background-color: #8a1f4d;
-	box-shadow: rgba(46, 3, 20, 0.95) 1px 1px 3px 0px;
+	background-color: #b10d6c;
+	box-shadow: rgba(46, 3, 20, 0.95) 2px 2px 3px 0px;
 }
 
 .button a {
@@ -86,7 +86,7 @@ p {
 }
 
 .button.catalog-button {
-	box-shadow: #290000 1px 1px 3px 0px;
+	box-shadow: #290000 2px 2px 3px 0px;
 	text-shadow: black 1px 1px 6px;
 }
 .header {
@@ -132,34 +132,7 @@ p {
 	display: block;
 }
 
-.feedback {
-	position: static;
-	display: inline-block;
-	overflow: visible;
-	width: auto;
-	margin-top: 16px;
-	margin-right: 42px;
-	margin-left: 0px;
-	padding: 6px;
-	float: none;
-	clear: none;
-	border: 0px solid rgba(46, 31, 18, 0.88);
-	background-color: #ccc4c4;
-	box-shadow: black 1px 1px 3px 0px;
-	text-align: left;
-}
-.feedback.cenetr-feedback {
-	width: auto;
-}
-.feedbackslide {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	clear: none;
-	direction: ltr;
-	text-align: center;
-	text-indent: 0px;
-}
+
 .vk {
 	float: left;
 }
@@ -190,17 +163,7 @@ p {
 	padding-right: 20px;
 	float: left;
 }
-.feed-text {
-	font-style: italic;
-}
-.feed-face {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-.feed-vk {
-	color: #06153e;
-}
+
 .action-head {
 	margin-top: 1px;
 	color: #06153d;
@@ -278,9 +241,7 @@ p {
 		margin-bottom: 1.5em;
 	}
 
-	.card {
-		box-shadow: gray 2px 2px 2px 2px;
-	}
+	
 
 /** bonuses */
 	.bonuses {
@@ -299,4 +260,87 @@ p {
 	.advantages {
 		list-style: url("../images/starlist.png");
 
+	}
+
+	.why513 {
+		background-color: rgb(231, 235, 253);
+	}
+
+
+/*  feedbacks*/
+	.feedback {
+		position: static;
+		display: inline-block;
+		overflow: visible;
+		width: auto;
+		margin-right: 42px;
+		margin-left: 0px;
+		padding: 6px;
+		float: none;
+		clear: none;
+		border: 0px solid rgba(46, 31, 18, 0.88);
+		background-color: white;
+		box-shadow: black 1px 1px 3px 0px;
+		text-align: left;
+	}
+	.feedback.cenetr-feedback {
+		width: auto;
+	}
+	.feedbackslide {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		clear: none;
+		direction: ltr;
+		text-align: center;
+		text-indent: 0px;
+	}
+
+	.feedfon {
+	
+		background-color: #2B3D77;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.feed-text {
+		font-style: italic;
+	}
+	.feed-face {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.feed-vk {
+		color: #06153e;
+	}
+
+
+	.good {
+		position: static;
+		margin-top: 20px;
+	}
+	.goods-face {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+		text-align: left;
+	}
+
+	.allgoods {
+		background-color: #2B3D77;
+	}
+
+	.card {
+		background-color: white;
+		box-shadow: rgba(18, 20, 71, 0.63) 2px 2px 2px 2px;
+	}
+
+	.goods .card {
+		height: 470px;
+	}
+
+	.goods2 .card {
+		height: 430px;
 	}
