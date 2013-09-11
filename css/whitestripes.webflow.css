@@ -145,17 +145,6 @@ p {
 	margin-left: auto;
 	float: right;
 }
-.good {
-	position: static;
-	margin-top: 20px;
-}
-.goods-face {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	float: none;
-	text-align: left;
-}
 .bonus-face {
 	float: left;
 }
@@ -318,11 +307,10 @@ p {
 	.feed-vk {
 		color: #06153e;
 	}
-
+/* catalog */
 
 	.good {
 		position: static;
-		margin-top: 20px;
 	}
 	.goods-face {
 		display: block;
@@ -334,6 +322,8 @@ p {
 
 	.allgoods {
 		background-color: #2B3D77;
+		padding-top: 1.5em;
+		padding-bottom: 3em;
 	}
 
 	.card {
@@ -345,13 +335,16 @@ p {
 		height: 470px;
 	}
 
+	.goods2 {
+		margin-top: 20px;
+	}
+
 	.goods2 .card {
 		height: 430px;
 	}
 
 /* footer */
 	.footer {
-		margin-top: 3em;
 		padding-top: 5em;
 		padding-bottom: 5em;
 		background-color: gray;
