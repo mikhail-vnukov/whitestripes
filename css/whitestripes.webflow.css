@@ -196,7 +196,19 @@ p {
 	}
 
 	.phone-button {
+		width: 180px;
 		margin-top: 1em;
+	}
+
+	.phone-button a {
+		width: 170px;
+		padding: 4px 9px;
+	}
+
+	.phone-button a img {
+		display: inline-block;
+		float: left;
+		margin-top: 5px;
 	}
 
 /** presentation */
@@ -327,8 +339,16 @@ p {
 	}
 
 	.card {
+		position: relative;
 		background-color: white;
 		box-shadow: rgba(18, 20, 71, 0.63) 2px 2px 2px 2px;
+	}
+
+	.card .button {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		margin-left: -75px;
 	}
 
 	.goods .card {
