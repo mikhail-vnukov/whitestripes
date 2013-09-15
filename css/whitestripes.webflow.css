@@ -444,6 +444,35 @@ p {
 	.feed-vk {
 		color: #06153e;
 	}
+
+	/* carousel */
+		.feedbackslide {
+			position: relative;
+		}
+
+		.feedbackslide li {
+			width: 250px;
+		}
+		.rs-carousel-horizontal .rs-carousel-item {
+			margin: 0 3em;
+		}
+
+		.rs-carousel-action {
+			color: white;
+		}
+
+		.rs-carousel-action-next {
+			position: absolute;
+			right: 0;
+			top: 50%;
+		}
+
+		.rs-carousel-action-prev {
+			position: absolute;
+			left: 0;
+			top: 50%;
+		}
+
 /* catalog */
 
 	.good {

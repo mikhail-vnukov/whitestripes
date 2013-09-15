@@ -11,12 +11,28 @@
 		<link rel="stylesheet" type="text/css" href="css/whitestripes.webflow.css">
 		<link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/counter.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.rs.carousel.css" media="all" />
+		<link href="css/lightbox.css" rel="stylesheet" />
+
+
 		<link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery.ui.widget.js"></script>
+		<!-- if using touch -->
+		<script type="text/javascript" src="js/vendor/jquery.event.drag.js"></script>
+		<!-- if using touch and translate3d -->
+		<script type="text/javascript" src="js/vendor/jquery.translate3d.js"></script>
+
+		<script type="text/javascript" src="js/carousel/jquery.rs.carousel.js"></script>
+		<!-- carousel extensions (optional) -->
+		<script type="text/javascript" src="js/carousel/jquery.rs.carousel-autoscroll.js"></script>
+		<script type="text/javascript" src="js/carousel/jquery.rs.carousel-continuous.js"></script>
+		<script type="text/javascript" src="js/carousel/jquery.rs.carousel-touch.js"></script>
 
 		<script type="text/javascript" src="js/webflow.js"></script>
 		<script type="text/javascript" src="js/flipcounter.js"></script>
+		<script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
 
 	</head><body>
 	<section class="up">
@@ -79,16 +95,39 @@
 		</div>
 	</section>
 	<section class="feedfon">
-		<div class="w-container content feedbackslide">
-			<h3>Отзывы наших довольных клиентов</h3>
+		<div class="w-container content feedbackslide rs-carousel">
+			<ul>
+				<li>
+					<a href="img/image-1.jpg" data-lightbox="image-1" title="My caption">image #1</a>
+					<h4>Катя Прахова, Москва</h4>
+					<h5>курс на 7 дней + отбеливающая паста</h5>
+					<p>
+						Когда я решил отбелить свои зубы, то мой стоматолог посоветовал мне попробовать отбеливающие полоски Crest Whitestrips.
+						Нашел в интернете сайт we-love-smile.ru, сделал заказ, и был приятно удивлен профессионализмом команды we-love-smile, сразу чувствовалась, что люди разбираются в вопросах отбеливания и знают о чем говорят. Ну, а когда я получил свои полоски спустя всего два часа после заказа, то окончательно в этом убедился. Брал курс на 7 дней и уже после первого применения был виден эффект, на 7 же день уже все друзья наперебой интересовались, как я отбелил свои зубы. Так что, ждите новых клиентов! Желаю успехов и процветания!
+					</p>
+
+					<a href="http://vk.com/prahova">VK</a>
+				</li>
+				<li>
+					<img class="feed-face" src="images/feedback/small/feedsample2.jpg" alt="client2.jpg">
+				</li>
+				<li>
+					<img class="feed-face" src="images/feedback/small/feedsample3.jpg" alt="client2.jpg">
+				</li>
+				<li>
+					<img class="feed-face" src="images/feedback/small/feedsample1.jpg" alt="client2.jpg">
+				</li>
+				<li>
+					<img class="feed-face" src="images/feedback/small/feedsample2.jpg" alt="client2.jpg">
+				</li>
+				<li>
+					<img class="feed-face" src="images/feedback/small/feedsample3.jpg" alt="client2.jpg">
+				</li>
+			</ul>
+		</div>
+
 			<div class="w-hidden-small w-hidden-tiny feedback">
-				<img class="feed-face" src="images/feedback/small/feedsample1.jpg" alt="client2.jpg">
-			</div>
-			<div class="feedback">
-				<img class="feed-face" src="images/feedback/small/feedsample5.jpg" alt="client2.jpg">
-			</div>
-			<div class="w-hidden-small w-hidden-tiny feedback">
-				<img class="feed-face" src="images/feedback/small/feedsample4.jpg" alt="client2.jpg">
+				<img class="feed-face" src="images/feedback/small/feedsample3.jpg" alt="client2.jpg">
 			</div>
 		</div>
 	</section>
@@ -287,8 +326,8 @@
 							<a  href="#">
 								<img src="images/buttons/cart.png" width="30">
 
-						 		Заказать сейчас
-						 	</a>
+								Заказать сейчас
+							</a>
 						 </div>
 					</div>
 				</div>
@@ -376,10 +415,7 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript">
-	//<![CDATA[
+	<script type="text/javascript" src="js/main.js"></script>
 
-	//]]>
-	</script>
 </body>
 </html>
