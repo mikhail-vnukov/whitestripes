@@ -34,14 +34,14 @@ h1 {
 }
 h2 {
 	margin: 10px 0px;
-	color: #8a1f4d;
+	color: #ad0f66;
 	font-size: 32px;
 	line-height: 36px;
 	font-weight: 700;
 }
 h3 {
 	margin: 25px 0px 10px;
-	color: #d62539;
+	color: #ad0f66;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
@@ -53,7 +53,7 @@ h4 {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
-	color: #8a1f4d;
+	color: #ad0f66;
 	text-align: center;
 }
 h5 {
@@ -85,8 +85,10 @@ p {
 	margin-left: auto;
 	float: none;
 	clear: none;
-	border-radius: 0px;
-	background-color: #dd2350;
+	border-radius: 6px;
+	background: -webkit-gradient(linear, left top, left bottom, 
+		color-stop(0%,rgba(226,90,163,1)), 
+		color-stop(100%,rgba(204,26,124,1)));
 	box-shadow: rgba(46, 3, 20, 0.95) 2px 2px 3px 0px;
 }
 
@@ -105,9 +107,37 @@ p {
 
 }
 
+.buttonsub {
+	position: static;
+	vertical-align: middle;
+	display: block;
 
+	width: 150px;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	clear: none;
+	border-radius: 6px;
+	background: -webkit-gradient(linear, left top, left bottom, 
+		color-stop(0%,rgba(188,43,103,1)), 
+		color-stop(100%,rgba(138,31,77,1)));
+	box-shadow: rgba(46, 3, 20, 0.95) 2px 2px 3px 0px;
+}
 
-
+.buttonsub a {
+	vertical-align: middle;
+	display: table-cell;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-shadow: black 1px 1px 6px;
+	width: 150px;
+	height: 50px;
+	padding: 4px 15px;
+}
 
 .vk {
 	float: left;
@@ -130,7 +160,7 @@ p {
 }
 
 .action-head {
-	margin-top: 1px;
+	
 	color: #06153d;
 }
 @media (max-width: 991px) {
@@ -174,17 +204,17 @@ p {
 		padding-left: 35px;
 		background-image: none;
 		font-family: 'museo_cyrl500', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		color: #d62539;
+		color: #F7F7F7;
 		font-size: 3.1em;
 		text-transform: none;
-		margin-top: 1.1em;
-		text-shadow: 1px 1px 2px rgba(192, 26, 59, 0.5);
+		margin-top: 0;
+		text-shadow: 1px 1px 9px rgb(26, 33, 192);
 		text-align: center;
 	}
 	.phone-link {
 		text-decoration: none;
 		font-size: 1.9em;
-		color: #06153e;
+		color: #f7f7f7;
 		font-weight: bold;
 		line-height: 1.5em;
 	}
@@ -212,7 +242,7 @@ p {
 
 /** presentation */
 	.up {
-		background-color: #fcfcfc;
+		background-image: url(../images/crest-ph-bg.jpg);
 		box-shadow: white 0px 0px 6px 0px;
 	}
 
@@ -272,6 +302,15 @@ p {
 
 
 /** Fears and conscious */
+
+	.allfears {
+		background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%,rgba(247,247,247,1)), 
+			color-stop(95%,rgba(247,247,247,0.9)), 
+			color-stop(100%,rgba(238,249,255,1)));
+
+	}
+
 	.fears {
 		max-width: 760px;
 		margin: 0 auto;
@@ -290,7 +329,7 @@ p {
 	}
 
 	.step {
-		color: #d62539;
+		color: #ad0f66;
 	}
 	
 	.steps {
@@ -313,12 +352,17 @@ p {
 /** advantages */
 	.advantages {
 		font-size: 1.2em;
-		list-style: url("../images/starlist.png");
+		list-style: url("../images/hand.png");
 
 	}
 
 	.why513 {
-		background-color: rgb(231, 235, 253);
+		/*background-color: rgb(231, 235, 253);*/
+		background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%,rgba(231,235,253,1)),
+			 color-stop(1%,rgba(231,235,253,1)), 
+			 color-stop(95%,rgba(231,235,253,0.9)), 
+			 color-stop(100%,rgba(247,247,247,1)));
 		padding-bottom: 20px;
 	}
 
@@ -357,15 +401,29 @@ p {
 		display: block;
 		margin-right: auto;
 		margin-left: auto;
+		margin-bottom: 30px;
 		clear: none;
 		direction: ltr;
 		text-align: center;
 		text-indent: 0px;
 	}
 
+	.feedbackslide h3 {
+		color: #f7f7f7;
+		text-shadow: 1px 1px 9px rgb(26, 33, 192);
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
 	.feedfon {
 	
-		background-color: #4b5e89;
+		/*background-color: #4b5e89;*/
+		background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%,rgba(238,249,255,1)), 
+			color-stop(1%,rgba(238,249,255,0.97)),
+			color-stop(5%,rgba(38,111,180,0.87)), 
+			color-stop(95%,rgba(38,111,180,0.9)), 
+			color-stop(100%,rgba(231,235,253,1)));
 		padding-bottom: 20px;
 		padding-top: 20px;
 	}
@@ -397,7 +455,13 @@ p {
 	}
 
 	.allgoods {
-		background-color: #4b5e89;
+		/*background-color: #4b5e89;*/
+		background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%,rgba(238,249,255,1)), 
+			color-stop(1%,rgba(238,249,255,0.97)),
+			color-stop(5%,rgba(38,111,180,0.87)), 
+			color-stop(95%,rgba(38,111,180,0.9)), 
+			color-stop(100%,rgba(231,235,253,1)));
 		padding-top: 1.5em;
 		padding-bottom: 3em;
 	}
