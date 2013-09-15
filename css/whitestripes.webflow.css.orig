@@ -34,14 +34,14 @@ h1 {
 }
 h2 {
 	margin: 10px 0px;
-	color: #ad0f66;
+	color: #8a1f4d;
 	font-size: 32px;
 	line-height: 36px;
 	font-weight: 700;
 }
 h3 {
 	margin: 25px 0px 10px;
-	color: #ad0f66;
+	color: #d62539;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
@@ -53,7 +53,7 @@ h4 {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
-	color: #ad0f66;
+	color: #8a1f4d;
 	text-align: center;
 }
 h5 {
@@ -85,15 +85,12 @@ p {
 	margin-left: auto;
 	float: none;
 	clear: none;
-	border-radius: 6px;
-	background: -webkit-gradient(linear, left top, left bottom, 
-		color-stop(0%,rgba(226,90,163,1)), 
-		color-stop(100%,rgba(204,26,124,1)));
+	border-radius: 0px;
+	background-color: #dd2350;
 	box-shadow: rgba(46, 3, 20, 0.95) 2px 2px 3px 0px;
-	cursor: pointer;
 }
 
-.button a, .button span {
+.button a {
 	vertical-align: middle;
 	display: table-cell;
 	color: white;
@@ -105,39 +102,12 @@ p {
 	width: 150px;
 	height: 50px;
 	padding: 4px 15px;
+
 }
 
-.buttonsub {
-	position: static;
-	vertical-align: middle;
-	display: block;
 
-	width: 150px;
-	height: 50px;
-	margin-right: auto;
-	margin-left: auto;
-	float: none;
-	clear: none;
-	border-radius: 6px;
-	background: -webkit-gradient(linear, left top, left bottom, 
-		color-stop(0%,rgba(188,43,103,1)), 
-		color-stop(100%,rgba(138,31,77,1)));
-	box-shadow: rgba(46, 3, 20, 0.95) 2px 2px 3px 0px;
-}
 
-.buttonsub a {
-	vertical-align: middle;
-	display: table-cell;
-	color: white;
-	font-weight: 700;
-	text-align: center;
-	letter-spacing: 0px;
-	text-decoration: none;
-	text-shadow: black 1px 1px 6px;
-	width: 150px;
-	height: 50px;
-	padding: 4px 15px;
-}
+
 
 .vk {
 	float: left;
@@ -160,7 +130,7 @@ p {
 }
 
 .action-head {
-	
+	margin-top: 1px;
 	color: #06153d;
 }
 @media (max-width: 991px) {
@@ -204,17 +174,17 @@ p {
 		padding-left: 35px;
 		background-image: none;
 		font-family: 'museo_cyrl500', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		color: #F7F7F7;
+		color: #d62539;
 		font-size: 3.1em;
 		text-transform: none;
-		margin-top: 0;
-		text-shadow: 1px 1px 9px rgb(26, 33, 192);
+		margin-top: 1.1em;
+		text-shadow: 1px 1px 2px rgba(192, 26, 59, 0.5);
 		text-align: center;
 	}
 	.phone-link {
 		text-decoration: none;
 		font-size: 1.9em;
-		color: #f7f7f7;
+		color: #06153e;
 		font-weight: bold;
 		line-height: 1.5em;
 	}
@@ -237,37 +207,29 @@ p {
 	.phone-button a img {
 		display: inline-block;
 		float: left;
-		margin-top: 8px;
-		margin-right: 10px;
+		margin-top: 5px;
 	}
 
 /** presentation */
 	.up {
-		background-image: url(../images/crest-ph-bg.jpg);
+		background-color: #fcfcfc;
 		box-shadow: white 0px 0px 6px 0px;
 	}
 
 	.presentation {
 		width: auto;
 		height: 315px;
-		background-image: url(../images/backphoto.png);
+		background-image: url(../images/sl2.jpg);
 		background-size: 960px;
 		background-repeat: no-repeat no-repeat;
 		box-shadow: #183663 5px 1px 35px 5px;
-	}
-
-/** action */
-	.action-text {
-		padding-bottom: 10px;
-		font-size: 16px;
-		font-weight: 700;
 	}
 	.action {
 		position: static;
 		margin: 6px 14px -1px 0px;
 		padding: 2px 15px 10px;
 		float: right;
-		background-color: rgba(255, 255, 255, 0.80);
+		background-color: rgba(255, 255, 255, 0.70);
 		box-shadow: #787878 1px 1px 3px 0px;
 		text-align: center;
 		width: 320px;
@@ -280,8 +242,6 @@ p {
 	.actions {
 		position: static;
 		display: block;
-		padding-top: 10px;
-
 	}
 
 	.action-trigger {
@@ -289,6 +249,14 @@ p {
 		margin-left: 1.9em;
 		margin-bottom: 0.5em;
 	} 
+
+/** action */
+	.action-text {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 16px;
+		font-weight: 700;
+	}
 
 	.new-price {
 		color: #8a1f4d;
@@ -304,15 +272,6 @@ p {
 
 
 /** Fears and conscious */
-
-	.allfears {
-		background: -webkit-gradient(linear, left top, left bottom, 
-			color-stop(0%,rgba(247,247,247,1)), 
-			color-stop(95%,rgba(247,247,247,0.9)), 
-			color-stop(100%,rgba(238,249,255,1)));
-
-	}
-
 	.fears {
 		max-width: 760px;
 		margin: 0 auto;
@@ -330,12 +289,8 @@ p {
 		font-size: 1.2em;
 	}
 
-	.step h4 {
-		color: #ad0f66;
-	}
-
-	.step p {
-		height: 140px;
+	.step {
+		color: #d62539;
 	}
 	
 	.steps {
@@ -344,8 +299,9 @@ p {
 
 /** bonuses */
 	.bonuses {
-		margin-bottom: 1px;
-		margin-top: 41px;
+		margin-top: 14px;
+		margin-bottom: 21px;
+		margin-top: 29px;
 	}
 	.guarantee {
 		float: none;
@@ -357,17 +313,12 @@ p {
 /** advantages */
 	.advantages {
 		font-size: 1.2em;
-		list-style: url("../images/hand.png");
+		list-style: url("../images/starlist.png");
 
 	}
 
 	.why513 {
-		/*background-color: rgb(231, 235, 253);*/
-		background: -webkit-gradient(linear, left top, left bottom, 
-			color-stop(0%,rgba(231,235,253,1)),
-			 color-stop(1%,rgba(231,235,253,1)), 
-			 color-stop(95%,rgba(231,235,253,0.9)), 
-			 color-stop(100%,rgba(247,247,247,1)));
+		background-color: rgb(231, 235, 253);
 		padding-bottom: 20px;
 	}
 
@@ -406,29 +357,15 @@ p {
 		display: block;
 		margin-right: auto;
 		margin-left: auto;
-		margin-bottom: 30px;
 		clear: none;
 		direction: ltr;
 		text-align: center;
 		text-indent: 0px;
 	}
 
-	.feedbackslide h3 {
-		color: #f7f7f7;
-		text-shadow: 1px 1px 9px rgb(26, 33, 192);
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-
 	.feedfon {
 	
-		/*background-color: #4b5e89;*/
-		background: -webkit-gradient(linear, left top, left bottom, 
-			color-stop(0%,rgba(238,249,255,1)), 
-			color-stop(1%,rgba(238,249,255,0.97)),
-			color-stop(5%,rgba(38,111,180,0.87)), 
-			color-stop(95%,rgba(38,111,180,0.9)), 
-			color-stop(100%,rgba(231,235,253,1)));
+		background-color: #4b5e89;
 		padding-bottom: 20px;
 		padding-top: 20px;
 	}
@@ -489,14 +426,8 @@ p {
 	}
 
 	.allgoods {
-		/*background-color: #4b5e89;*/
-		background: -webkit-gradient(linear, left top, left bottom, 
-			color-stop(0%,rgba(238,249,255,1)), 
-			color-stop(1%,rgba(238,249,255,0.97)),
-			color-stop(5%,rgba(38,111,180,0.87)), 
-			color-stop(95%,rgba(38,111,180,0.9)), 
-			color-stop(100%,rgba(231,235,253,1)));
-		padding-top: 2.5em;
+		background-color: #4b5e89;
+		padding-top: 1.5em;
 		padding-bottom: 3em;
 	}
 
@@ -540,6 +471,7 @@ p {
 		background-color: rgb(231, 235, 253);
 	}
 
+<<<<<<< HEAD
 	.back-call {
 		width: 240px;
 	}
@@ -551,10 +483,6 @@ p {
 	.footer > div > div {
 		display: inline-block;
 	}
+=======
 
-	.back-call img {
-		display: inline-block;
-		margin-top: 8px;
-		float: left;	
-	}
-	
+>>>>>>> Acrousel + lightbox

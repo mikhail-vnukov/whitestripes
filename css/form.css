@@ -1,0 +1,52 @@
+.md-content {
+	background: #3498db;
+}
+
+.md-content h3 {
+	color: #e67e22;
+}
+
+form {
+	padding: 10px;
+}
+
+form input, form select, form textarea {
+	display: block;
+	width: 100%;		
+}
+
+form .input-group {
+	line-height: 2em;
+}
+
+form .md-close, form .submit-button {
+	width: 40%;
+	height: 3em;
+	border: none;
+	background: none;
+	font-size: 1em;
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+	display: inline-block;
+}
+form .form-controls {
+	width: 100%;
+	margin-top: 5%;
+	text-align: justify;
+}
+
+form .form-controls:after {
+	display: inline-block;
+	width: 100%;
+	content: "";
+}
+
+.error-panel {
+	padding: 0 !important;
+	background-color: yellow;
+	color: black;
+	width: 100%;
+	display: inline-block;
+	line-height: 2em;
+	display: none;
+}

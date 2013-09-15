@@ -6,13 +6,16 @@
 		<title>WhiteStripes</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/webflow.css">
 		<link rel="stylesheet" type="text/css" href="css/whitestripes.webflow.css">
-		<link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/counter.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.rs.carousel.css" media="all" />
-		<link href="css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+		<link rel="stylesheet" type="text/css" href="css/modal.css" />
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
 
 
 		<link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
@@ -33,6 +36,10 @@
 		<script type="text/javascript" src="js/webflow.js"></script>
 		<script type="text/javascript" src="js/flipcounter.js"></script>
 		<script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+		<script type="text/javascript" src="js/form/form.js"></script>
+		<script type="text/javascript" src="js/form/messages.ru.js"></script>
+
+		<script type="text/javascript" src="js/form/parsley.js"></script>
 
 	</head><body>
 	<section class="up">
@@ -368,11 +375,10 @@
 							</ul>
 						</div>
 						<div class="button">
-							<a  href="#">
+							<span>
 								<img src="images/buttons/cart.png" width="30">
-
 								Заказать сейчас
-							</a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -415,6 +421,49 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="md-modal md-effect-13" id="order-form"  >
+		<div class="md-content">
+			<h3>Форма заказа</h3>
+			<div id="error-panel" class="error-panel">
+				Пожалуйста, проверьте правильность заполнения формы
+			</div>
+			<form data-validate="parsley">
+				<div class="input-group">
+					<label>Имя</label>
+					<input name="name" type="text" data-required="true"></input>
+				</div>
+				<div class="input-group">
+					<label>Телефон</label> 
+					<input name="phone" type="text" required="required"></input>
+				</div>
+				<div class="input-group">
+					<label>Email</label> 
+					<input name='email' type="text" data-type="email" data-trigger="change" required="required"></input>
+				</div>
+				<div>
+					<label>Модель</label>
+					<select id="model" name="model">
+					  <option value="ab-big">angry birds (big)</option>
+					  <option value="ab-small">angry birds (small)</option>
+					  <option value="turnik-standard">Турник „Стандарт” </option>
+					  <option value="turnik-leto">Турник „Лето - 2013”</option>
+					  <option value="maugli">Пьяная лестница</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label>Вопросы и комментарии</label>
+					<textarea name="comment"></textarea>
+				</div>
+				<input type="hidden" name="submitted" id="submitted" value="true" />
+
+				<div class="form-controls">
+					<input id="submit-button" class='submit-button' type="submit" value="Отправить"></input>
+					<button type="reset" class="md-close">Закрыть</button>
+				</div>
+			</form>	 
+		</div>
+	</div>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </body>

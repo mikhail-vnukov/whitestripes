@@ -1,5 +1,7 @@
 (function() {
-	$('.feedbackslide').ready(function() {
+	$('.document').ready(function() {
+		chargeForm('#order-form', 'send.php',  ' .card .button');
+
 		$('.rs-carousel').carousel({
 			itemsPerTransition: 1,
 			pagination: false,
@@ -14,4 +16,6 @@
 
 		});
 	});
+
+
 })();
