@@ -237,7 +237,8 @@ p {
 	.phone-button a img {
 		display: inline-block;
 		float: left;
-		margin-top: 5px;
+		margin-top: 8px;
+		margin-right: 10px;
 	}
 
 /** presentation */
@@ -249,10 +250,17 @@ p {
 	.presentation {
 		width: auto;
 		height: 315px;
-		background-image: url(../images/sl2.jpg);
+		background-image: url(../images/backphoto.png);
 		background-size: 960px;
 		background-repeat: no-repeat no-repeat;
 		box-shadow: #183663 5px 1px 35px 5px;
+	}
+
+/** action */
+	.action-text {
+		padding-bottom: 10px;
+		font-size: 16px;
+		font-weight: 700;
 	}
 	.action {
 		position: static;
@@ -272,6 +280,8 @@ p {
 	.actions {
 		position: static;
 		display: block;
+		padding-top: 10px;
+
 	}
 
 	.action-trigger {
@@ -279,14 +289,6 @@ p {
 		margin-left: 1.9em;
 		margin-bottom: 0.5em;
 	} 
-
-/** action */
-	.action-text {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		font-size: 16px;
-		font-weight: 700;
-	}
 
 	.new-price {
 		color: #8a1f4d;
@@ -338,9 +340,8 @@ p {
 
 /** bonuses */
 	.bonuses {
-		margin-top: 14px;
-		margin-bottom: 21px;
-		margin-top: 29px;
+		margin-bottom: 1px;
+		margin-top: 41px;
 	}
 	.guarantee {
 		float: none;
@@ -462,7 +463,7 @@ p {
 			color-stop(5%,rgba(38,111,180,0.87)), 
 			color-stop(95%,rgba(38,111,180,0.9)), 
 			color-stop(100%,rgba(231,235,253,1)));
-		padding-top: 1.5em;
+		padding-top: 2.5em;
 		padding-bottom: 3em;
 	}
 
@@ -517,3 +518,10 @@ p {
 	.footer > div > div {
 		display: inline-block;
 	}
+
+	.back-call img {
+		display: inline-block;
+		margin-top: 8px;
+		float: left;	
+	}
+	
