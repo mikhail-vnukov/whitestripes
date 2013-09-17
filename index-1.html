@@ -11,8 +11,6 @@
 		<link rel="stylesheet" type="text/css" href="css/whitestripes.webflow.css">
 		<link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/counter.css" />
-				<link rel="stylesheet" type="text/css" href="css/variant1.css" />
-
 		<link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
@@ -20,33 +18,45 @@
 		<script type="text/javascript" src="js/webflow.js"></script>
 		<script type="text/javascript" src="js/flipcounter.js"></script>
 
+		<link rel="stylesheet" type="text/css" href="css/variant1.css">
+
+
 	</head><body>
-	<section>
-		<div class="w-container content up">
+	<section class="up">
+		<div class="w-container content">
 			<header class="w-clearfix header">
-				<img class="logo" src="images/logo.png" width="120" alt="logo.png">
+				<div class="logo">
+					<img src="images/crestlogo.png" alt="crestlogo.png">
+					<h1 class="slogan"> Обрети белоснежную улыбку<br> за 7 дней!</h1>
+	
+				</div>
+				
 				<div class="connection">
-					<a class="phone-link" href="callto:84957777777">+7(495)777-77-77</a>
-					
+					<a class="phone-link" href="callto:84994092492">+7(499)409-24-92</a>
+					<br/>
+					<a class="phone-link" href="callto:89166149760">+7(916)614-97-60</a>
+
 					<div class="phone-button button">
 						<a href="#">
-							<img src="images/buttons/phone.png" width="30" style="
-							    display: inline; ">
+							<img src="images/buttons/phone.png" width="25">
 								Заказать бесплатный звонок	
 						</a>
 					</div>
 				</div>
-				<h1 class="slogan"> Обрети белоснежную улыбку<br> за 7 дней!</h1>
 			</header>
 			<div class="w-clearfix presentation">
 				<div class="action">
-					<h2>Акция!</h2>
-					<h3 class="action-head"> Отбеливающие полоски<br/> Crest 3D Intensive <br>Professional Effects<strong>-30%</strong></h3>
-					<div class="actions">
-						<div class="action-text">старая цена <span class="old-price">2000</span>
-							<p class="new-price">новая цена 1500</p></div>
+					<h3>Акция!</h3>
+					<h4 class="action-head"> Отбеливающие полоски<br/> 
+					<span class="accent">Crest 3D Intensive <br>Professional Effects<strong>-30%</strong></span></h4>
+
+					<div class="actions w-clearfix">
+						<img class="action-trigger" src="images/foraction.png" height="90" alt="3.jpg">
+
+						<div class="action-text">старая цена: <p class="old-price">4650 руб.</p>
+							<p class="new-price">новая цена: </p><p class="new-price">3250 руб.</p></div>
 					</div>
-					<div class="button">
+					<div class="buttonsub">
 						<a href="#">
 							Участвовать в акции
 						</a>
@@ -55,7 +65,7 @@
 			</div>
 			<div class="w-row bonuses">
 				<div class="w-col w-col-4 w-clearfix">
-					<img class="bonus-face" src="images/guarantee.png" width="100" alt="phone%20rebel.jpg">
+					<img class="bonus-face" src="images/guarant.png" width="100" alt="phone%20rebel.jpg">
 					<div class="guarantee">Мы гарантируем, что Ваши зубы 
 						станут белее на 4-6 тонов или
 						мы вернем вам деньги!</div>
@@ -65,7 +75,7 @@
 					<div class="guarantee">Вся наша продукция прошла необходимую сертификацию</div>
 				</div>
 				<div class="w-col w-col-4 w-clearfix">
-					<img class="bonus-face" src="images/delivery1.png" width="100" alt="phone%20rebel.jpg">
+					<img class="bonus-face" src="images/delivery.png" width="100" alt="phone%20rebel.jpg">
 					<div class="guarantee">Бесплатная доставка по Москве при заказе на сумму свыше 5000 рублей</div>
 				</div>
 			</div>
@@ -73,14 +83,15 @@
 	</section>
 	<section class="feedfon">
 		<div class="w-container content feedbackslide">
+			<h3>Отзывы наших довольных клиентов</h3>
 			<div class="w-hidden-small w-hidden-tiny feedback">
 				<img class="feed-face" src="images/feedback/small/feedsample1.jpg" alt="client2.jpg">
 			</div>
 			<div class="feedback">
-				<img class="feed-face" src="images/feedback/small/feedsample2.jpg" alt="client2.jpg">
+				<img class="feed-face" src="images/feedback/small/feedsample5.jpg" alt="client2.jpg">
 			</div>
 			<div class="w-hidden-small w-hidden-tiny feedback">
-				<img class="feed-face" src="images/feedback/small/feedsample3.jpg" alt="client2.jpg">
+				<img class="feed-face" src="images/feedback/small/feedsample4.jpg" alt="client2.jpg">
 			</div>
 		</div>
 	</section>
@@ -88,7 +99,7 @@
 		<div class="w-container content advantages-container">
 			<div>
 				<h3>Почему уже 513 человек отбелили зубы вместе с нами?</h3>
-				<div class="w-row">
+				<div class="w-row ">
 					<div class="w-col w-col-8 w-clearfix">
 						<div class="w-embed adv-list">
 							<ul class="advantages">
@@ -110,61 +121,69 @@
 					</div>
 				</div>
 			</div>
-			<div class="button">
-				<a class="catalog-button" href="#">
+			<div class="button catalog-button">
+				<a href="#">
 					Хочу белоснежную улыбку!
 				</a>
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="allfears">
 		<div class="w-container content fears w-clearfix">
 			<h3>Пять главных страхов при отбеливании зубов</h3>
 			<div class="problem">
-				<div>- Это очень дорого!</div>
+				<div><img src="images/exclamation.png"> Обычно это очень дорого!</div>
 			</div>
 			<div class="solution">
 				<div>Комплект отбеливающих полосок Crest 3D Whitestrips стоит намного дешевле, чем отбеливание в стоматологической клинике. Вы экономите до 15 тыс. руб., но в итоге получаете точно такой же результат, так как в состав отбеливающих полосок входят те же самые компоненты, что и в средства для профессионального отбеливания в клиниках.</div>
 			</div>
 			<div class="problem">
-				<div>- Боюсь, что не получу желаемого результата</div>
+				<div><img src="images/exclamation.png"> Боюсь, что не получу желаемого результата</div>
 			</div>
 			<div class="solution">
 				<div>После использования отбеливающих полосок Crest 3D Whitestrips, мы гарантируем, что ваши зубы станут белее на 4-6 тонов, или мы вернем Вам деньги!</div>
 			</div>
 			<div class="problem">
-				<div>- Повысится чувствительность зубов</div>
+				<div><img src="images/exclamation.png"> Слышала, что повышается чувствительность зубов</div>
 			</div>
 			<div class="solution">
 				<div>Некоторые люди могут испытывать повышение чувствительности зубов во время использования полосок Crest 3D Whitestrips. Повышенная чувствительность проходит после окончания курса и не является опасной, при повышении чувствительности Вы можете сделать перерыв в 1-2 дня, а также использовать пасту для чувствительных зубов Crest Sensitivity, понижающую чувствительность на 50%.</div>
 			</div>
 			<div class="problem">
-				<div>- Отбеливание вредит эмали зубов</div>
+				<div><img src="images/exclamation.png"> Мне кажется, отбеливание вредит эмали зубов</div>
 			</div>
 			<div class="solution">
 				<div>Использование отбеливающих полосок Crest 3D Whitestrips абсолютно безопасно для эмали зубов. Независимое исследование компании Kelton Research доказало безопасность и эффективность Crest Whitestrips. Система отбеливания Crest 3D White признана брендом #1 в мире, который советуют использовать в домашних условиях профессиональные стоматологи.</div>
 			</div>
 
 			<div class="problem">
-				<div>- Процесс отбеливания занимает много времени</div>
+				<div><img src="images/exclamation.png"> Говорят, процесс отбеливания занимает много времени</div>
 			</div>
 			<div class="solution">
 				<div>Отбеливающие полоски Crest 3D Whitestrips очень просты и удобны в использовании. 
 					
 					</div>
-
-				<div class="w-row">
-				<div class="w-col w-col-4 good">
-					<h4>Шаг 1</h4>Снимите защитное покрытие с полоски.
-					<img class="goods-face" src="images/3steps/1_over.jpg" alt="1step">
+				<div class="w-row steps">
+				<div class="w-col w-col-4 step good">
+					<h4>Шаг 1</h4>
+					<p>
+						Откройте пакетик и достаньте полоску. Снимите защитное покрытие с полоски. Чистить зубы перед применением отбеливающих полосок не рекомендуется.
+					</p>
+					<img class="goods-face" src="images/3steps/1_over.png" alt="1step">
 				</div>
-				<div class="w-col w-col-4 good">
-					<h4>Шаг 2</h4>Встаньте перед зеркалом и приложите полоску гелевой стороной к зубам, затем выровняйте ее по линии десен и плотно прижмите.
-					<img class="goods-face" src="images/3steps/2_over.jpg" alt="2.jpg">
+				<div class="w-col w-col-4 step good">
+					<h4>Шаг 2</h4>
+					<p>
+						Наклейте полоску гелевой стороной на зубы. Расположите полоску аккуратно по линии дёсен и слегка прижмите. Выступающие края полоски загните за зубы.
+					</p>
+					<img class="goods-face" src="images/3steps/2_over.png" alt="2.jpg">
 				</div>
-				<div class="w-col w-col-4 good">
-					<h4>Шаг 3</h4>Для лучшего отбеливания загните выступающие края полоски. Удалите полоски через 30 минут или 2 часа в зависимости от системы отбеливания и аккуратно почистите зубы.
-					<img class="goods-face" src="images/3steps/3_over.jpg" alt="7FJ2EWwny6s.jpg">
+				<div class="w-col w-col-4 step good">
+					<h4>Шаг 3</h4>
+					<p>
+						Держите полоски на зубах в течение 30 минут или 2 часов в зависимости от системы отбеливания и аккуратно почистите зубы.
+					</p>
+					<img class="goods-face" src="images/3steps/3_over.png" alt="7FJ2EWwny6s.jpg">
 				</div>
 			</div>
 
@@ -176,11 +195,11 @@
 		<div class="goods">
 			<div class="w-row">
 				<div class="w-col w-col-4 good">
-					<div class="card">
+					<div class= 	"card">
 						<h4>Crest 3D Intensive</br>
 						Professional Effects</h4>
 						<h5>Цена: 3250 руб.</h5>
-						<img class="goods-face" src="images/7FJ2EWwny6s.jpg" height="150" alt="3.jpg">
+						<img class="goods-face" src="images/1.jpg" height="150" alt="3.jpg">
 						<div class="w-embed">
 							<ul>
 								<li>длительность курса 7 дней</li>
@@ -193,6 +212,8 @@
 						</div>
 						<div class="button">
 							<a href="#">
+								<img src="images/buttons/cart.png" width="30">
+
 								Заказать сейчас
 							</a>
 						</div>
@@ -215,6 +236,8 @@
 						</div>
 						<div class="button">
 							<a href="#">
+								<img src="images/buttons/cart.png" width="30">
+
 								Заказать сейчас
 							</a>
 						</div>
@@ -238,6 +261,8 @@
 						</div>
 						<div class="button">
 							<a  href="#">
+								<img src="images/buttons/cart.png" width="30">
+
 								Заказать сейчас
 
 							</a>
@@ -263,6 +288,8 @@
 							</div>
 						<div class="button">
 							<a  href="#">
+								<img src="images/buttons/cart.png" width="30">
+
 						 		Заказать сейчас
 						 	</a>
 						 </div>
@@ -283,6 +310,8 @@
 						</div>
 						<div class="button">
 							<a href="#">
+								<img src="images/buttons/cart.png" width="30">
+
 								Заказать сейчас
 							</a>
 						</div>
@@ -304,6 +333,8 @@
 						</div>
 						<div class="button">
 							<a  href="#">
+								<img src="images/buttons/cart.png" width="30">
+
 								Заказать сейчас
 							</a>
 						</div>
@@ -316,12 +347,35 @@
 
 	<footer class="footer">
 		<div class="w-container">
-			© здесь может и даже должна находиться информация о копирайте<br/>
-			также можно укзать год создания<br/>
-			если есть, допустим, ИНН<br/>
-			и ещё раз телефон для связи<br/>
-		</div>
 		
+			<div class="w-row">
+				<div class="w-col w-col-4">
+
+					Следите за нашими новостями<br/>
+					и новыми улыбками в Instagram:<br/>
+					<a href="instagram.com">crest_luxury_smile</a><br/>
+					<br/>
+
+					ООО "Дарим улыбку" 2011-2013<br/>
+					(c) Все права защищены<br/>
+					ОГРН: 1117746125231<br/>
+				</div>
+				<div class="w-col w-col-4">
+					<div class="back-call buttonsub">
+						<a  href="#">
+							<img src="images/buttons/phone.png" width="30"></img>
+							Заказать бесплатную консультацию
+						</a>
+					</div>
+				</div>
+				<div class="w-col w-col-4">
+					<h5>
+						Остались вопросы? Звоните - поможем!
+						+7(499)409-24-92
+					</h5>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script type="text/javascript">
 	//<![CDATA[

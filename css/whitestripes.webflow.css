@@ -267,7 +267,7 @@ p {
 		margin: 6px 14px -1px 0px;
 		padding: 2px 15px 10px;
 		float: right;
-		background-color: rgba(255, 255, 255, 0.70);
+		background-color: rgba(255, 255, 255, 0.80);
 		box-shadow: #787878 1px 1px 3px 0px;
 		text-align: center;
 		width: 320px;
@@ -330,8 +330,12 @@ p {
 		font-size: 1.2em;
 	}
 
-	.step {
+	.step h4 {
 		color: #ad0f66;
+	}
+
+	.step p {
+		height: 140px;
 	}
 	
 	.steps {

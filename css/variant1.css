@@ -1,4 +1,8 @@
-
-.button {
-	background-color: #dd2350;
+.presentation {
+	background-image: url(../images/backphoto3.jpg);
+	width: auto;
+	height: 315px;
+	background-size: 960px;
+	background-repeat: no-repeat no-repeat;
+	box-shadow: #180d5c 5px 1px 35px 7px;
 }
