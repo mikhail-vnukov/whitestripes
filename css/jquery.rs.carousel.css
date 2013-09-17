@@ -18,6 +18,7 @@
 }
 
     .rs-carousel-runner {
+        list-style: none;
         position: relative;
     }
         

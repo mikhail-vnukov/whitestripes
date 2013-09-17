@@ -8,10 +8,10 @@
 			touch: true,
 			continuous: true,
 			insertPrevAction: function () {
-			    return $('<a href="#" class="rs-carousel-action rs-carousel-action-prev"><</a>').appendTo(this);
+			    return $('<a href="#" class="rs-carousel-action rs-carousel-action-prev"></a>').appendTo(this);
 			},
 			insertNextAction: function () {
-			    return $('<a href="#" class="rs-carousel-action rs-carousel-action-next">></a>').appendTo(this);
+			    return $('<a href="#" class="rs-carousel-action rs-carousel-action-next"></a>').appendTo(this);
 			},
 
 		});

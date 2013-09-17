@@ -465,12 +465,18 @@ p {
 			position: absolute;
 			right: 0;
 			top: 50%;
+			background: url(../images/feedback/arrow-right.png) no-repeat;
+			width: 16px;
+			height: 30px;
 		}
 
 		.rs-carousel-action-prev {
 			position: absolute;
 			left: 0;
 			top: 50%;
+			background: url(../images/feedback/arrow-left.png) no-repeat;
+			width: 16px;
+			height: 30px;
 		}
 
 /* catalog */
