@@ -3,23 +3,28 @@
 <html data-wf-site="522b3b4f90df96a2040003b8">
 	<head>
 		<meta charset="utf-8">
-		<title>WhiteStripes</title>
+		<meta name='yandex-verification' content='69bbd904350ca633' />
+
+		<title>Crest 3D - студия белоснежной улыбки</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/webflow.css">
-		<link rel="stylesheet" type="text/css" href="css/whitestripes.webflow.css">
 		<link rel="stylesheet" type="text/css" href="css/counter.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.rs.carousel.css" media="all" />
-		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css" />
 		<link rel="stylesheet" type="text/css" href="css/modal.css" />
 		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
+		<link rel="stylesheet" type="text/css" href="css/flipclock.css"> 
 
+		<link rel="stylesheet" type="text/css" href="css/webflow.css">
+		<link rel="stylesheet" type="text/css" href="css/whitestripes.webflow.css">
 
 		<link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 
+		<script type="text/javascript" src="http://vk.com/js/api/openapi.js?101"></script>
 		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="js/vendor/jquery.ui.widget.js"></script>
 		<!-- if using touch -->
@@ -35,14 +40,22 @@
 
 		<script type="text/javascript" src="js/webflow.js"></script>
 		<script type="text/javascript" src="js/flipcounter.js"></script>
-		<script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+
 		<script type="text/javascript" src="js/form/form.js"></script>
 		<script type="text/javascript" src="js/form/messages.ru.js"></script>
 
 		<script type="text/javascript" src="js/form/parsley.js"></script>
+		
+		<script type="text/javascript" src="js/vendor/prefixfree.min.js"></script>
+		<script type="text/javascript" src="js/vendor/base.js"></script>
+		<script type="text/javascript" src="js/flipclock.js"></script>
+		<script type="text/javascript" src="js/faces/HourlyCounter.js"></script>
 
-	</head><body>
-	<section class="up">
+		<script type="text/javascript" src="js/vendor/jquery.lightbox.js"></script>
+
+	</head>
+<body>
+	<section class="top-site">
 		<div class="w-container content">
 			<header class="w-clearfix header">
 				<div class="logo">
@@ -52,34 +65,35 @@
 				</div>
 				
 				<div class="connection">
-					<a class="phone-link" href="callto:84994092492">+7(499)409-24-92</a>
+					<a class="phone-link" href="tel:84994092492">+7(499)409-24-92</a>
 					<br/>
-					<a class="phone-link" href="callto:89166149760">+7(916)614-97-60</a>
+					<a class="phone-link" href="tel:89166149760">+7(916)614-97-60</a>
 
-					<div class="phone-button button">
-						<a href="#">
+					<div class="phone-button button form-trigger">
+						<span>
 							<img src="images/buttons/phone.png" width="25">
-								Заказать бесплатный звонок	
-						</a>
-					</div>
+								Заказать обратный звонок	
+						</span>
 				</div>
 			</header>
 			<div class="w-clearfix presentation">
 				<div class="action">
-					<h3>Акция!</h3>
-					<h4 class="action-head"> Отбеливающие полоски<br/> 
-					<span class="accent">Crest 3D Intensive <br>Professional Effects<strong>-30%</strong></span></h4>
+					<h3>Акция! -30%</h3>
+					<h4 class="action-head">на отбеливающие полоски<br/> 
+					<span class="accent">Crest 3D Intensive Professional Effects</span></h4>
 
 					<div class="actions w-clearfix">
+						<div id="countdown" class="w-clearfix countdown"></div>
+
 						<img class="action-trigger" src="images/foraction.png" height="90" alt="3.jpg">
 
 						<div class="action-text">старая цена: <p class="old-price">4650 руб.</p>
-							<p class="new-price">новая цена: </p><p class="new-price">3250 руб.</p></div>
+							<p class="new-price">новая цена: </p><p class="new-price">3290 руб.</p></div>
 					</div>
-					<div class="buttonsub">
-						<a href="#">
-							Участвовать в акции
-						</a>
+					<div class="button form-trigger">
+						<span>
+							Участвовать <br/>в акции
+						</span>
 					</div>
 				</div>
 			</div>
@@ -91,8 +105,13 @@
 						мы вернем вам деньги!</div>
 				</div>
 				<div class="w-col w-col-4 w-clearfix">
-					<img class="bonus-face" src="images/sertif.png" width="100" alt="sertif.png">
-					<div class="guarantee">Вся наша продукция прошла необходимую сертификацию</div>
+					<a class="certificates" href="images/certificates/sert1.jpg" rel="lightbox">
+						<img class="bonus-face" src="images/sertif.png" width="100" alt="sertif.png">
+						<div class="guarantee">Вся наша продукция прошла необходимую сертификацию</div>
+					</a>
+					<a class="other-certs" href="images/certificates/sert2.jpg" rel="lightbox"></a>
+					<a class="other-certs" href="images/certificates/sert3.jpg" rel="lightbox"></a>
+					<a class="other-certs" href="images/certificates/sert4.jpg" rel="lightbox"></a>
 				</div>
 				<div class="w-col w-col-4 w-clearfix">
 					<img class="bonus-face" src="images/delivery.png" width="100" alt="phone%20rebel.jpg">
@@ -104,33 +123,145 @@
 	<section class="feedfon">
 		<div class="w-container content feedbackslide rs-carousel">
 			<ul>
-				<!-- <li>
-					<a href="img/image-1.jpg" data-lightbox="image-1" title="My caption">image #1</a>
-					<h4>Катя Прахова, Москва</h4>
-					<h5>курс на 7 дней + отбеливающая паста</h5>
-					<p>
-						Когда я решил отбелить свои зубы, то мой стоматолог посоветовал мне попробовать отбеливающие полоски Crest Whitestrips.
-						Нашел в интернете сайт we-love-smile.ru, сделал заказ, и был приятно удивлен профессионализмом команды we-love-smile, сразу чувствовалась, что люди разбираются в вопросах отбеливания и знают о чем говорят. Ну, а когда я получил свои полоски спустя всего два часа после заказа, то окончательно в этом убедился. Брал курс на 7 дней и уже после первого применения был виден эффект, на 7 же день уже все друзья наперебой интересовались, как я отбелил свои зубы. Так что, ждите новых клиентов! Желаю успехов и процветания!
+				<li>
+					<a href="images/feedback/large/1feedphoto.jpg" target="_blank" data-toggle="lightbox"  title="Оксана Лебедева"><img src="images/feedback/small/1feedphoto.jpg"></a>
+					
+					<h4>Оксана Лебедева, Москва:</h4>
+					<h5>курс на 14 дней + отбеливающая паста </h5>
+					<p class="content">
+						Мой первый опыт отбеливания зубов. 
+						Было очень много сомнений, и я 
+						долго не решалась купить, но менеджер 
+						по телефону был очень вежлив и 
+						обходителен и помог мне подобрать 
+						подходящий курс отбеливания. 
+						<br/>
+						В итоге, взяла курс на 14 дней + две 
+						зубные пасты и совсем не жалею! 
+						Результат заметили все, я даже не 
+						ожидала такого эффекта. Теперь всем 
+						рекомендую!
 					</p>
 
-					<a href="http://vk.com/prahova">VK</a>
-				</li> -->
-				<li>
-					<img class="feed-face" src="images/feedback/small/feedsample1.jpg" alt="client2.jpg">
+					<a target="_blank" class="vk-link" href="http://vk.com/id11581012">http://vk.com/id11581012</a>
 				</li>
 				<li>
-					<img class="feed-face" src="images/feedback/small/feedsample4.jpg" alt="client2.jpg">
+					<a href="images/feedback/large/3feedphotokatya.jpg" target="_blank" data-toggle="lightbox"  title="Екатерина Прахова"><img src="images/feedback/small/3feedphotokatya.jpg"></a>
+					
+					<h4>Екатерина Прахова, Москва:</h4>
+					<h5>курс на 7 дней + отбеливающая паста  </h5>
+					<p class="content">
+						Раньше делала отбеливание zoom 
+						в клинике, результат в принципе 
+						радовал, чего не скажешь о цене. 
+						Поэтому когда услышала о полосках 
+						Crest Whitestrips - сначала не поверила, 
+						что может быть такой же результат, 
+						но гораздо дешевле. Но это возможно! 
+						У меня зубы стали еще белее! Мне 
+						кажется, меня скоро со спутника будет 
+						видно! 
+					</p>
+
+					<a target="_blank" class="vk-link" href="http://vk.com/prahhova ">http://vk.com/prahhova </a>
 				</li>
 				<li>
-					<img class="feed-face" src="images/feedback/small/feedsample5.jpg" alt="client2.jpg">
+					<a href="images/feedback/large/4feedvarta.jpg" target="_blank" data-toggle="lightbox"  title="Варта Тевосян"><img src="images/feedback/small/4feedvarta.jpg"></a>
+					
+					<h4>Варта Тевосян, Санкт-Петербург:</h4>
+					<h5>курс на 7 дней + отбеливающая паста  </h5>
+					<p class="content">
+						До использования отбеливающих 
+						полосок Crest 3D перепробовала 
+						множество других систем домашнего 
+						отбеливания, которые не давали 
+						желаемого результата. 
+						Но решила рискнуть еще раз и я 
+						в диком восторге, зубы теперь 
+						белые-белые!! Отдельное спасибо 
+						менеджерам данного магазина за 
+						подробные консультации и приятный 
+						сюрприз при доставке! Буду заказывать 
+						еще и всем советую! Вы большие 
+						молодцы!
+					</p>
+
 				</li>
+				<li>
+					<a href="images/feedback/large/2feedphoto.jpg" target="_blank" data-toggle="lightbox"  title="Леонид Малолетов"><img src="images/feedback/small/2feedphoto.jpg"></a>
+					
+					<h4>Леонид Малолетов, Москва:</h4>
+					<h5>курс на 7 дней + паста для чувствительных зубов </h5>
+					<p class="content">
+						Когда я решил отбелить свои зубы, то
+						 мой стоматолог посоветовал мне 
+						попробовать отбеливающие полоски 
+						Crest Whitestrips. Нашел в интернете 
+						сайт we-love-smile.ru, сделал заказ, и был
+						 приятно удивлен профессионализмом 
+						команды we-love-smile, сразу 
+						чувствовалась, что люди разбираются 
+						в вопросах отбеливания и знают о чем 
+						говорят. Ну, а когда я получил свои 
+						полоски спустя всего два часа после 
+						заказа, то окончательно в этом 
+						убедился. Брал курс на 7 дней и уже 
+						после первого применения был виден 
+						эффект, на 7 же день уже все друзья 
+						наперебой интересовались, как я 
+						отбелил свои зубы. Так что, ждите 
+						новых клиентов! Желаю успехов и 
+						процветания!
+					</p>
+
+					<a target="_blank" class="vk-link" href="http://vk.com/maloletoff">http://vk.com/maloletoff</a>
+				</li>
+				<li>
+					<a href="images/feedback/large/6feedphoto.jpg" target="_blank" data-toggle="lightbox"  title="Анастасия Тулякова"><img src="images/feedback/small/6feedphoto.jpg"></a>
+					
+					<h4>Анастасия Тулякова, Москва:</h4>
+					<h5>курс на 7 дней + 2 пасты </h5>
+					<p class="content">
+						Заказала полосочки на 7 дней для 
+						молодого человека,привезли через час:)
+						в первый день использования чуть-
+						чуть болели зубки,завтра последний 
+						день, цвет зубов-небо и земля)))
+						белые-белые)))счастью нет предела)))
+						отличный сервис и замечательные 
+						полосочки)всем советую!!!) лиентов! 
+						Желаю успехов и процветания!
+					</p>
+
+					<a target="_blank" class="vk-link" href="http://vk.com/tulyakovaanastasia">http://vk.com/tulyakovaanastasia</a>
+				</li>
+				<li>
+					<a href="images/feedback/large/5feedaida.jpg" target="_blank" data-toggle="lightbox"  title="Аида"><img src="images/feedback/small/5feedaida.jpg"></a>
+					
+					<h4>Аида, Екатеринбург: :</h4>
+					<h5>курс на 20 дней + паста для чувствительных зубов</h5>
+					<p class="content">
+						Мне посоветовала эти отбеливающие полоски подруга. 
+						Сама бы я не решилась, так как у меня 
+						повышенная чувствительность зубов. 
+						Но менеджеры сайта рассказали мне, что формула Crest Whitestrips содержит компоненты, используемые стоматологами при профессиональном отбеливании зубов.
+						<br/>
+						Кстати вначале может быть легкая боль в зубах во время отбеливания,это нормально,потом после 5 полоски ее уже нет.
+						Но, когда видишь результат отбеливания, то сразу про все забываешь! Я даже не думала, что мои зубы могут быть такими белыми!Вообщем не бойтесь, заказывайте и радуйте всех своей белоснежной ослепительной улыбкой!!!
+					</p>
+
+					<!-- <a target="_blank" class="vk-link" href="http://vk.com/tulyakovaanastasia">http://vk.com/tulyakovaanastasia</a> -->
+				</li>
+
 			</ul>
 		</div>
 	</section>
 	<section class="why513">
 		<div class="w-container content advantages-container">
-			<div>
-				<h3>Почему уже 513 человек отбелили зубы вместе с нами?</h3>
+
+				<h3>Почему уже <br/>
+					<div id="upcounter"> </div>
+					<br/> человек отбелили зубы вместе с нами?</h3>
 				<div class="w-row ">
 					<div class="w-col w-col-8 w-clearfix">
 						<div class="w-embed adv-list">
@@ -149,14 +280,19 @@
 						</div>
 					</div>
 					<div class="w-col w-col-4 w-clearfix group">
-						<img class="group" src="images/vkgroup.png" width="300" alt="vkgroup.png">
-					</div>
+
+
+					<!-- VK Widget -->
+					<div class="w-col w-col-4 w-clearfix group" id="vk_groups"></div>
+					<script type="text/javascript">
+						VK.Widgets.Group("vk_groups", {mode: 0, width: "300", height: "418"}, 54816472);
+					</script>
 				</div>
 			</div>
-			<div class="button catalog-button">
-				<a href="#">
+			<div class="button form-trigger catalog-button">
+				<span>
 					Хочу белоснежную улыбку!
-				</a>
+				</span>
 			</div>
 		</div>
 	</section>
@@ -222,35 +358,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="allgoods">
+	<section id="catalog" class="allgoods">
 		<div class="w-container content goods-container">
 		<div class="goods">
 			<div class="w-row">
-				<div class="w-col w-col-4 good">
-					<div class= 	"card">
-						<h4>Crest 3D Intensive</br>
-						Professional Effects</h4>
-						<h5>Цена: 3250 руб.</h5>
-						<img class="goods-face" src="images/1.jpg" height="150" alt="3.jpg">
-						<div class="w-embed">
-							<ul>
-								<li>длительность курса 7 дней</li>
-								<li>результаты заметны после первого применения</li>
-								<li>отбеливание на 5-6 тонов</li>
-								<li>эффект отбеливания сохраняется от 12<br/>
-								 до 18 месяцев</li>
-								<li>время использования: 2 часа, 1 раз в день</li>
-							</ul>
-						</div>
-						<div class="button">
-							<a href="#">
-								<img src="images/buttons/cart.png" width="30">
-
-								Заказать сейчас
-							</a>
-						</div>
-					</div>
-				</div>
 				<div class="w-col w-col-4 good">
 					<div class="card">
 						<h4>Crest 3D</br>
@@ -266,12 +377,11 @@
 								<li>время использования: 30 минут, 1 раз в день</li>
 							</ul>
 						</div>
-						<div class="button">
-							<a href="#">
+						<div class="form-trigger button">
+							<span>
 								<img src="images/buttons/cart.png" width="30">
-
 								Заказать сейчас
-							</a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -291,21 +401,85 @@
 								<li>время использования: 30 минут, 1 раз в день</li>
 							</ul>
 						</div>
-						<div class="button">
-							<a  href="#">
+						<div class="form-trigger button">
+							<span>
 								<img src="images/buttons/cart.png" width="30">
-
 								Заказать сейчас
-
-							</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="w-col w-col-4 good">
+					<div class= 	"card">
+						<h4>Crest 3D Intensive</br>
+						Professional Effects</h4>
+						<h5>Цена: 3290 руб.</h5>
+						<img class="goods-face" src="images/1.jpg" height="150" alt="3.jpg">
+						<div class="w-embed">
+							<ul>
+								<li>длительность курса 7 дней</li>
+								<li>результаты заметны после первого применения</li>
+								<li>отбеливание на 5-6 тонов</li>
+								<li>эффект отбеливания сохраняется от 12<br/>
+								 до 18 месяцев</li>
+								<li>время использования: 2 часа, 1 раз в день</li>
+							</ul>
+						</div>
+						<div class="form-trigger button">
+							<span>
+								<img src="images/buttons/cart.png" width="30">
+								Заказать сейчас
+							</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="goods2">
-			<div class="w-row">
-				<div class="w-col w-col-4 good">
+			<div class="goods2">
+				<div class="w-row">
+
+					<div class="w-col w-col-4 good">
+						<div class="card">
+							<h4>Зубная паста Crest</br> 
+							Pro-Health</h4>
+							<h5>Цена: 590 руб.</h5>
+							<img class="goods-face" src="images/5.jpg" height="150" alt="5.jpg">
+							<div class="w-embed">
+								<ul>
+									<li>зубная паста нового поколения</li>
+									<li>эффективно борется с кариесом и надолго обеспечивает свежее дыхание</li>
+								</ul>
+							</div>
+							<div class="form-trigger button">
+								<span>
+									<img src="images/buttons/cart.png" width="30">
+									Заказать сейчас
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="w-col w-col-4 good">
+						<div class="card">
+							<h4>Зубная паста Crest</br> 
+							Sensitivity Teeth Protection</h4>
+							<h5>Цена: 590 руб.</h5>
+							<img class="goods-face" src="images/4.jpg" height="150" alt="4.jpg">
+							<div class="w-embed">
+								<ul>
+									<li>инновационная зубная паста для снижения чувствительности зубов</li>
+									<li>содержит минеральные вещества, необходимые для укрепления зубной эмали</li>
+									<li>освежает дыхание</li>
+								</ul>
+							</div>
+							<div class="form-trigger button">
+								<span>
+									<img src="images/buttons/cart.png" width="30">
+									Заказать сейчас
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="w-col w-col-4 good">
 						<div class="card">
 						<h4>Зубная паста Crest</br> 
 						Glamorous White</h4>
@@ -318,61 +492,17 @@
 									 делая зубы здоровыми и белоснежными!</li>
 								</ul>
 							</div>
-						<div class="button">
-							<a  href="#">
-								<img src="images/buttons/cart.png" width="30">
-
-								Заказать сейчас
-							</a>
-						 </div>
-					</div>
-				</div>
-
-				<div class="w-col w-col-4 good">
-					<div class="card">
-						<h4>Зубная паста Crest</br> 
-						Pro-Health</h4>
-						<h5>Цена: 590 руб.</h5>
-						<img class="goods-face" src="images/5.jpg" height="150" alt="5.jpg">
-						<div class="w-embed">
-							<ul>
-								<li>зубная паста нового поколения</li>
-								<li>эффективно борется с кариесом и надолго обеспечивает свежее дыхание</li>
-							</ul>
-						</div>
-						<div class="button">
-							<a href="#">
-								<img src="images/buttons/cart.png" width="30">
-
-								Заказать сейчас
-							</a>
+							<div class="form-trigger button">
+								<span>
+									<img src="images/buttons/cart.png" width="30">
+									Заказать сейчас
+								</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="w-col w-col-4 good">
-					<div class="card">
-						<h4>Зубная паста Crest</br> 
-						Sensitivity Teeth Protection</h4>
-						<h5>Цена: 590 руб.</h5>
-						<img class="goods-face" src="images/4.jpg" height="150" alt="4.jpg">
-						<div class="w-embed">
-							<ul>
-								<li>инновационная зубная паста для снижения чувствительности зубов</li>
-								<li>содержит минеральные вещества, необходимые для укрепления зубной эмали</li>
-								<li>освежает дыхание</li>
-							</ul>
-						</div>
-						<div class="button">
-							<span>
-								<img src="images/buttons/cart.png" width="30">
-								Заказать сейчас
-							</span>
-						</div>
-					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</section>
 
@@ -383,7 +513,7 @@
 				<div class="w-col w-col-4">
 					Следите за нашими новостями<br/>
 					и новыми улыбками в Instagram:<br/>
-					<a href="instagram.com">crest_luxury_smile</a><br/>
+					<a target="_blank" href="http://instagram.com/crest_luxury_smile">crest_luxury_smile</a><br/>
 					<br/>
 
 					ООО "Дарим улыбку" 2011-2013<br/>
@@ -394,11 +524,11 @@
 				</div>
 
 				<div class="w-col w-col-4">
-					<div class="back-call buttonsub">
-						<a  href="#">
+					<div class="form-trigger button back-call buttonsub">
+						<span>
 							<img src="images/buttons/phone.png" width="30"></img>
 							Заказать бесплатную консультацию
-						</a>
+						</span>
 					</div>
 				</div>
 				<div class="w-col w-col-4">
@@ -424,26 +554,15 @@
 				</div>
 				<div class="input-group">
 					<label>Телефон</label> 
-					<input name="phone" type="text" required="required"></input>
+					<input name="phone" type="text" data-required="true"></input>
 				</div>
 				<div class="input-group">
-					<label>Email</label> 
-					<input name='email' type="text" data-type="email" data-trigger="change" required="required"></input>
-				</div>
-				<div>
-					<label>Модель</label>
-					<select id="model" name="model">
-					  <option value="ab-big">angry birds (big)</option>
-					  <option value="ab-small">angry birds (small)</option>
-					  <option value="turnik-standard">Турник „Стандарт” </option>
-					  <option value="turnik-leto">Турник „Лето - 2013”</option>
-					  <option value="maugli">Пьяная лестница</option>
-					</select>
-				</div>
-				<div class="input-group">
-					<label>Вопросы и комментарии</label>
+					<label>Комментарии</label>
 					<textarea name="comment"></textarea>
 				</div>
+					<p class="disclaimer">
+						Мы гарантируем, что ваши данные не будут переданы третьим лицам или использоваться в спам-рассылках.
+					</p>
 				<input type="hidden" name="submitted" id="submitted" value="true" />
 
 				<div class="form-controls">
@@ -454,6 +573,32 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Yandex.Metrika counter -->
+	 <script type="text/javascript">
+	(function (d, w, c) {
+	    (w[c] = w[c] || []).push(function() {
+	        try {
+	            w.yaCounter22341160 = new Ya.Metrika({id:22341160,
+	                    webvisor:true,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true});
+	        } catch(e) { }
+	    });
 
+	    var n = d.getElementsByTagName("script")[0],
+	        s = d.createElement("script"),
+	        f = function () { n.parentNode.insertBefore(s, n); };
+	    s.type = "text/javascript";
+	    s.async = true;
+	    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+	    if (w.opera == "[object Opera]") {
+	        d.addEventListener("DOMContentLoaded", f, false);
+	    } else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+	// </script>
+	<noscript><div><img src="//mc.yandex.ru/watch/22341160" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 </body>
 </html>
